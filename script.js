@@ -3,9 +3,13 @@ function capitalizeName(name) {
 }
 
 function generateEmail() {
+    function formatNumberToMoney(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     const customerName = document.getElementById('customerName').value.trim();
-    const amountDisbursed = document.getElementById('amountDisbursed').value;
-    const amountToPay = document.getElementById('amountToPay').value;
+    const amountDisbursed = formatNumberToMoney(document.getElementById('amountDisbursed').value);
+    const amountToPay = formatNumberToMoney(document.getElementById('amountToPay').value);
+
 
     if (customerName === '' || amountDisbursed === '' || amountToPay === '') {
         alert('Please fill in all fields');
