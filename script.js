@@ -2,6 +2,20 @@ function capitalizeName(name) {
     return name.toUpperCase();
 }
 
+function getCurrentFormattedDate() {
+    const date = new Date();
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    const month = months[date.getMonth()];
+    const day = date.getDate();
+    const year = date.getFullYear();
+    return `${month} ${day}, ${year}`;
+}
+
+const formattedDate = getCurrentFormattedDate();
+
 function generateEmail() {
     function formatNumberToMoney(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -20,7 +34,7 @@ function generateEmail() {
     
     const subject = `<h2>DEMAND NOTICE ON THE INDEBTEDNESS OF <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold></h2>`;
     const body = `
-    May 16, 2024
+    ${formattedDate}
     <br/>
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <p>Fairmoney Microfinance Bank is in custody of your executed contract in favour of <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold> whom we availed the sum of <bold style="font-weight: bold">₦ ${amountDisbursed}.00</bold>
