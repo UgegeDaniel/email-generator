@@ -39,9 +39,12 @@ function generateEmail() {
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <p>Fairmoney Microfinance Bank is in custody of your executed contract in favour of <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold> whom we availed the sum of <bold style="font-weight: bold">₦ ${amountDisbursed}.00</bold>
     <br/>
+    <br/>
     Consequently, you have reneged and not complied with the terms and conditions of your loan agreement with us. This is evidenced by your inability to honor your repayments. Your outstanding balance owed as at today ₦ <bold style="font-weight: bold"> ${amountToPay}.00</bold>
     <br/>
-    The bank views your action as totally Unacceptable. Without prejudice, We are by this mail, giving you 2 working days to regularize your outstanding payment, failure to comply, We would be taking robust recovery actions in line with the ambits of the law. I am hopeful we can resolve this without going through legal proceedings or commissioning an external debt recovery agency to pursue this debt. Feel free to contact us if you would like to discuss payment options.
+    <br/>
+    The bank views your action as totally Unacceptable. Without prejudice, <bold style="font-weight: bold">We are by this mail, giving you 2 working days to regularize your outstanding payment,</bold> failure to comply, We would be taking robust recovery actions in line with the ambits of the law. I am hopeful we can resolve this without going through legal proceedings or commissioning an external debt recovery agency to pursue this debt. Feel free to contact us if you would like to discuss payment options.
+    <br/>
     <br/>
     It is our earnest hopes you digest the above and be guided accordingly.
     <br/>
