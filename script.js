@@ -74,12 +74,16 @@ function generateFollowUpEmail() {
     ${formattedDate}
     </bold>
     <br/>
+    <br/>
     The records before us <bold bold style="font-weight: bold"> FAIRMONEY MICROFINANCE BANK </bold>, shows that you have failed, vehemently refused, and neglected to honour your obligations under the loan agreement with us by not paying your monthly installments as at when due.
     We hereby take cognizance of the various demand notices sent to you. TAKE NOTICE, therefore, that if you do not settle your outstanding/indebtedness to us in the sum of <bold bold style="font-weight: bold">${amountToPay} NGN </bold> representing outstanding installments and associated charges as at today, we shall proceed and take legal actions on you.
     <br/>
+    <br/>
     You are expected to regularize your account with us within <bold bold style="font-weight: bold"> (24)hours </bold>  of this notice.
     <br/>
+    <br/>
     Be guided accordingly.
+    <br/>
     <br/>
     <i bold style="font-weight: bold">
     You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us at +23417001276 or +2341888577, or send an email to help@fairmoney.io.
