@@ -15,11 +15,11 @@ function getCurrentFormattedDate() {
 }
 
 const formattedDate = getCurrentFormattedDate();
+function formatNumberToMoney(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 function generateEmail() {
-    function formatNumberToMoney(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
     const customerName = document.getElementById('customerName').value.trim();
     const amountDisbursed = formatNumberToMoney(document.getElementById('amountDisbursed').value);
     const amountToPay = formatNumberToMoney(document.getElementById('amountToPay').value);
@@ -51,6 +51,40 @@ function generateEmail() {
     <br/>
     You can pay into your FairMoney Microfinance bank account:, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us at +23417001276 or +2341888577, or send an email to help@fairmoney.io.
     </p>`;
+
+    document.getElementById('emailSubject').innerHTML = subject;
+    document.getElementById('emailBody').innerHTML = body;
+}
+function generateFollowUpEmail() {
+    const customerName = document.getElementById('customerName').value.trim();
+    const amountToPay = formatNumberToMoney(document.getElementById('amountToPay').value);
+
+
+    if (customerName === '' || amountToPay === '') {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    const capitalizedCustomerName = capitalizeName(customerName);
+    
+    const subject = `<h2>FINAL DEMAND NOTICE ON THE INDEBTEDNESS OF <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold></h2>`;
+    const body = `
+    <br/>
+    <bold bold style="font-weight: bold">
+    ${formattedDate}
+    </bold>
+    <br/>
+    The records before us <bold bold style="font-weight: bold"> FAIRMONEY MICROFINANCE BANK </bold>, shows that you have failed, vehemently refused, and neglected to honour your obligations under the loan agreement with us by not paying your monthly installments as at when due.
+    We hereby take cognizance of the various demand notices sent to you. TAKE NOTICE, therefore, that if you do not settle your outstanding/indebtedness to us in the sum of <bold bold style="font-weight: bold">${amountToPay} NGN </bold> representing outstanding installments and associated charges as at today, we shall proceed and take legal actions on you.
+    <br/>
+    You are expected to regularize your account with us within <bold bold style="font-weight: bold"> (24)hours </bold>  of this notice.
+    <br/>
+    Be guided accordingly.
+    <br/>
+    <i bold style="font-weight: bold">
+    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us at +23417001276 or +2341888577, or send an email to help@fairmoney.io.
+    </i>  
+    `;
 
     document.getElementById('emailSubject').innerHTML = subject;
     document.getElementById('emailBody').innerHTML = body;
