@@ -49,7 +49,9 @@ function generateEmail() {
     It is our earnest hopes you digest the above and be guided accordingly.
     <br/>
     <br/>
-    You can pay into your FairMoney Microfinance bank account:, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to collections@fairmoney.io.
+    <i bold style="font-weight: bold">
+    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to <a href="collections@fairmoney.io">collections@fairmoney.io</a>.
+    </i>  
     </p>`;
 
     document.getElementById('emailSubject').innerHTML = subject;
@@ -86,7 +88,7 @@ function generateFollowUpEmail() {
     <br/>
     <br/>
     <i bold style="font-weight: bold">
-    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to collections@fairmoney.io.
+    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to <a href="collections@fairmoney.io">collections@fairmoney.io</a>.
     </i>  
     `;
 
