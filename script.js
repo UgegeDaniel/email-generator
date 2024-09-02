@@ -43,14 +43,14 @@ function generateEmail() {
     Consequently, you have reneged and not complied with the terms and conditions of your loan agreement with us. This is evidenced by your inability to honor your repayments. Your outstanding balance owed as at today ₦ <bold style="font-weight: bold"> ${amountToPay}.00</bold>
     <br/>
     <br/>
-    The bank views your action as totally Unacceptable. Without prejudice, <bold style="font-weight: bold">We are by this mail, giving you 2 working days to regularize your outstanding payment,</bold> failure to comply, We would be taking robust recovery actions in line with the ambitof the law. I am hopeful we can resolve this without going through legal proceedings or commissioning an external debt recovery agency to pursue this debt. Feel free to contact us if you would like to discuss payment options.
+    The bank views your action as totally Unacceptable. Without prejudice, <bold style="font-weight: bold">We are by this mail, giving you 2 working days to regularize your outstanding payment,</bold> failure to comply, We would be taking robust recovery actions in line with the ambit of the law. I am hopeful we can resolve this without going through legal proceedings or commissioning an external debt recovery agency to pursue this debt. Feel free to contact us if you would like to discuss payment options.
     <br/>
     <br/>
     It is our earnest hopes you digest the above and be guided accordingly.
     <br/>
     <br/>
     <i bold style="font-weight: bold">
-    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to <a href="mailto:collections@fairmoney.io">collections@fairmoney.io</a>.
+    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2349167878305, or send an email to <a href="mailto:collections@fairmoney.io">collections@fairmoney.io</a>.
     </i>  
     </p>`;
 
@@ -88,7 +88,7 @@ function generateFollowUpEmail() {
     <br/>
     <br/>
     <i bold style="font-weight: bold">
-    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2347046322110, or send an email to <a href="mailto:collections@fairmoney.io">collections@fairmoney.io</a>.
+    You can pay into your FairMoney Microfinance bank account, login into the app and click on ‘’repay” and follow the prompt to make payment. We are here to assist you through this process. For any inquiries or assistance, please don't hesitate to call us on +2349167878305, or send an email to <a href="mailto:collections@fairmoney.io">collections@fairmoney.io</a>.
     </i>  
     `;
 
