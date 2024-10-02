@@ -37,7 +37,7 @@ function generateEmail() {
     <br/>
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <br/>
-    <em>${customerAddress} </em>
+    <bold bold style="font-weight: bold; font-style: italic">${customerAddress} </bold>
     <p>Fairmoney Microfinance Bank is in custody of your executed contract in favour of <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold> whom we availed the sum of <bold style="font-weight: bold">₦ ${amountDisbursed}.00</bold>
     <br/>
     <br/>
@@ -80,7 +80,7 @@ function generateFollowUpEmail() {
     <br/>
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <br/>
-    <em>${customerAddress} </em>
+    <bold bold style="font-weight: bold; font-style: italic">${customerAddress} </bold>
     <br/>
     The records before us <bold bold style="font-weight: bold"> FAIRMONEY MICROFINANCE BANK </bold>, shows that you have failed, vehemently refused, and neglected to honour your obligations under the loan agreement with us by not paying your monthly installments as at when due.
     We hereby take cognizance of the various demand notices sent to you. TAKE NOTICE, therefore, that if you do not settle your outstanding/indebtedness to us in the sum of <bold bold style="font-weight: bold">${amountToPay} NGN </bold> representing outstanding installments and associated charges as at today, we shall proceed and take legal actions on you.
