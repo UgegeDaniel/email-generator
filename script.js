@@ -33,11 +33,11 @@ function generateEmail() {
 
     const subject = `<h2>DEMAND NOTICE ON THE INDEBTEDNESS OF <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold></h2>`;
     const body = `
-    ${formattedDate}
+    <bold bold style="font-weight: bold">${formattedDate}</bold>
     <br/>
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <br/>
-    <bold bold style="font-weight: bold; font-style: italic">${customerAddress} </bold>
+    <bold bold style="font-weight: bold; font-style: italic">${capitalizeName(customerAddress)} </bold>
     <p>Fairmoney Microfinance Bank is in custody of your executed contract in favour of <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold> whom we availed the sum of <bold style="font-weight: bold">₦ ${amountDisbursed}.00</bold>
     <br/>
     <br/>
@@ -61,7 +61,6 @@ function generateEmail() {
 
 function generateFollowUpEmail() {
     const customerName = document.getElementById('customerName').value.trim();
-    const amountDisbursed = formatNumberToMoney(document.getElementById('amountDisbursed').value);
     const amountToPay = formatNumberToMoney(document.getElementById('amountToPay').value);
     const customerAddress = document.getElementById('customerAddress').value.trim();
     if (customerName === '' || amountToPay === '') {
@@ -80,7 +79,8 @@ function generateFollowUpEmail() {
     <br/>
     Attn: <bold bold style="font-weight: bold">${capitalizedCustomerName}</bold>
     <br/>
-    <bold bold style="font-weight: bold; font-style: italic">${customerAddress} </bold>
+    <bold bold style="font-weight: bold; font-style: italic">${capitalizeName(customerAddress)} </bold>
+    <br/>
     <br/>
     The records before us <bold bold style="font-weight: bold"> FAIRMONEY MICROFINANCE BANK </bold>, shows that you have failed, vehemently refused, and neglected to honour your obligations under the loan agreement with us by not paying your monthly installments as at when due.
     We hereby take cognizance of the various demand notices sent to you. TAKE NOTICE, therefore, that if you do not settle your outstanding/indebtedness to us in the sum of <bold bold style="font-weight: bold">${amountToPay} NGN </bold> representing outstanding installments and associated charges as at today, we shall proceed and take legal actions on you.
